@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa Hàng Truyện Tranh</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f8fafc;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      background-color: #111827;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffcc00;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 2px solid #ffcc00;
+      object-fit: cover;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    .menu li a:hover {
+      background-color: #ff006e;
+      color: #fff;
+    }
+
+    .menu li a.cart {
+      background-color: #ffcc00;
+      color: #111827;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .menu li a.cart:hover {
+      background-color: #fbbf24;
+      transform: scale(1.05);
+    }
+
+    /* ===== BANNER ===== */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      background-image: url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .banner-content h1 {
+      font-size: 3rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .banner-content p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #fdfdfd;
+    }
+
+    .banner-content .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background-color: #ff006e;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .banner-content .btn:hover {
+      background-color: #ffcc00;
+      color: #111827;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== GIỚI THIỆU WEBSITE ===== */
+    .intro {
+      text-align: center;
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      color: #111827;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 10px 20px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .logo {
+        justify-content: center;
+      }
+
+      .banner-content h1 {
+        font-size: 1rem;
+      }
+
+      .banner-content p {
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Logo Comic Store">
+      <span>Comic Store</span>
+    </div>
+
+    <ul class="menu">
+      <li><a href="#home">Trang Chủ</a></li>
+      </li><a href="theloaitruyen.html" class="btn" target="_blank"></li>Thể Loại</a></li>
+    </li><a href="sanpham.html" class="btn" target="_blank"></li>Truyện Mới</a></li>
+    </li><a href="thongtincanhan.html" class="btn" target="_blank"></li>Liên Hệ</a></li>
+    </li><a href="ChungChi.html" class="btn" target="_blank"></li>Chứng Chỉ</a></li>
+    </li><a href="Kynang.html" class="btn" target="_blank"></li>Kỹ Năng</a></li>
+    </li><a href="duan.html" class="btn" target="_blank"></li>Dự Án</a></li>
+      
+    </ul>
+  </nav>
+
+  <!-- ===== BANNER ===== -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Chào Mừng Đến Với COMIC STORE</h1>
+      <p>Khám phá thế giới truyện tranh đầy màu sắc và cảm xúc!</p>
+      
+
+    </div>
+  </section>
+
+  <!-- ===== GIỚI THIỆU WEBSITE ===== -->
+  <section class="intro">
+    <h2>Giới Thiệu Về Website Truyện Tranh</h2>
+    <p>
+      Comic Store là nơi hội tụ những bộ truyện tranh hấp dẫn nhất từ khắp nơi trên thế giới.  
+      Tại đây, bạn có thể dễ dàng tìm kiếm, đọc và mua những tập truyện yêu thích.  
+      Chúng tôi luôn cập nhật liên tục các tác phẩm mới nhất, từ manga Nhật Bản, manhwa Hàn Quốc  
+      cho đến truyện tranh Việt Nam, mang đến cho bạn trải nghiệm đọc truyện tuyệt vời nhất!
+    </p>
+  </section>
+
+</body>
+ 
+
+

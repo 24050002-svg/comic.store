@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truyện Mới - Comic Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f8fafc;
+      color: #111827;
+    }
+
+    header {
+      background-color: #111827;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px 40px 10px;
+      position: relative;
+    }
+
+    header h1 {
+      color: #ffcc00;
+      font-size: 2rem;
+    }
+
+    /* ===== NÚT QUAY LẠI ===== */
+    .back-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: #ff006e;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ffcc00;
+      color: #111827;
+      transform: scale(1.05);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      color: #ff006e;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #111827;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff006e;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: #111827;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="banner.html" class="back-btn">⬅️ Quay lại Trang Chủ</a>
+    <h1>✨ Truyện Mới Nhất ✨</h1>
+    <p>Khám phá những bộ truyện hấp dẫn vừa cập nhật tại Comic Store!</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 1 -->
+    <div class="card">
+      <img src="https://cdn.myanimelist.net/images/manga/2/253146.jpg" alt="One Piece">
+      <div class="card-content">
+        <h3>One Piece</h3>
+        <p>Cuộc hành trình tìm kho báu vĩ đại của Luffy và băng Mũ Rơm.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\Anime_Key_Visual_2 (1).webp" alt="Jujutsu Kaisen">
+      <div class="card-content">
+        <h3>Jujutsu Kaisen</h3>
+        <p>Hành trình tiêu diệt nguyền hồn và bảo vệ thế giới của Itadori.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\Đại_chiến_Titan_manga_tập_1_tiếng_Việt.png" alt="Attack on Titan">
+      <div class="card-content">
+        <h3></h3>Attack on Titan
+        <p>Con người chiến đấu sinh tồn trước những Titan khổng lồ.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\images (1).jpg" alt="Demon Slayer">
+      <div class="card-content">
+        <h3>Demon Slayer</h3>
+        <p>Cuộc chiến đầy cảm xúc giữa Tanjiro và lũ quỷ để cứu em gái.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\capsule_616x353.jpg" alt="My Hero Academia">
+      <div class="card-content">
+        <h3>My Hero Academia</h3>
+        <p>Hành trình trở thành anh hùng của Midoriya và bạn bè ở U.A.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\Naruto_Volume_1_manga_cover.jpg" alt="Naruto">
+      <div class="card-content">
+        <h3>Naruto</h3>
+        <p>Cậu bé mồ côi mang trong mình giấc mơ trở thành Hokage.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\14734-tho-san-quy-chainsaw-man-1 (1).jpg" alt="Chainsaw Man">
+      <div class="card-content">
+        <h3>Chainsaw Man</h3>
+        <p>Cuộc đời đẫm máu của Denji, kẻ hợp thể cùng quỷ Cưa.</p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\6faadaa918f64dbaad2f3d7ccd28dba5_1679558250761_lp.jpg" alt="Solo Leveling">
+      <div class="card-content">
+        <h3>Solo Leveling</h3>
+        <p>Jinwoo từ kẻ yếu nhất trở thành thợ săn mạnh nhất thế giới.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>📚 <a href="banner.html">Trang Chủ</a> | <a href="truyenmoi.html">Truyện Mới</a> | © 2025 Comic Store</p>
+  </footer>
+</body>
+</html>
+

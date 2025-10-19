@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ Năng & Ngôn Ngữ - Cửa Hàng Truyện Tranh</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #fdf2f8, #e0f2fe);
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #0ea5e9;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .skills-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #ff4d6d;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .skill, .language {
+      margin-bottom: 20px;
+    }
+
+    .skill-name, .lang-name {
+      font-weight: bold;
+      color: #0ea5e9;
+      margin-bottom: 6px;
+    }
+
+    .progress {
+      background-color: #f1f5f9;
+      border-radius: 25px;
+      height: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #ff4d6d, #0ea5e9);
+      border-radius: 25px;
+      width: 0;
+      animation: grow 2s ease forwards;
+    }
+
+    @keyframes grow {
+      from { width: 0; }
+      to { width: var(--width); }
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>💼 NGÔN NGỮ & KỸ NĂNG 💼</header>
+
+  <section class="skills-container">
+
+    <div class="section">
+      <h2>Kỹ Năng Chuyên Môn</h2>
+
+      <div class="skill">
+        <p class="skill-name">Thiết kế giao diện web (HTML, CSS, JS)</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p class="skill-name">Quản lý cửa hàng trực tuyến</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p class="skill-name">Chỉnh sửa hình ảnh sản phẩm (Canva, Photoshop)</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p class="skill-name">Tư duy sáng tạo và thiết kế nội dung</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 95%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Ngôn Ngữ</h2>
+
+      <div class="language">
+        <p class="lang-name">Tiếng Việt (Ngôn ngữ mẹ đẻ)</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 100%;"></div>
+        </div>
+      </div>
+
+      <div class="language">
+        <p class="lang-name">Tiếng Anh (Giao tiếp & đọc hiểu tài liệu)</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="language">
+        <p class="lang-name">Tiếng Nhật (Hiểu cơ bản về văn hóa manga)</p>
+        <div class="progress">
+          <div class="progress-bar" style="--width: 50%;"></div>
+
+        </div
+>
+      </div>
+    </div>
+  </section>
+<a href="Banner.html" class="back-btn">⬅ Quay lại Trang Chủ</a>
+  <footer>
+    © 2025 AnimeZone | Thiết kế & phát triển bởi Thành Long
+  </footer>
+
+</body>
+</html>
+

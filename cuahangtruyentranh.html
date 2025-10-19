@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa Hàng Truyện Tranh AnimeZone</title>
+
+  <!-- CSS chính -->
+  <style>
+    /* ====== RESET CSS ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* ====== BODY TOÀN TRANG ====== */
+    body {
+      background: linear-gradient(135deg, #e0f2fe, #fce1ec);
+      color: #333;
+    }
+
+    /* ====== BANNER PHẦN ĐẦU ====== */
+    header {
+      background-color: #ff4d6d;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    /* ====== THANH NAVBAR ====== */
+    nav {
+      background-color: #0ea5e9;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffe4e6;
+    }
+
+    /* ====== PHẦN THÔNG TIN CÁ NHÂN ====== */
+    .about {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h2 {
+      color: #ff4d6d;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      line-height: 1.6;
+    }
+
+    /* ====== PHẦN LIÊN HỆ ====== */
+    .contact {
+      text-align: center;
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact a {
+      display: inline-block;
+      text-decoration: none;
+      color: #ff4d6d;
+      font-weight: 500;
+      margin: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact a:hover {
+      transform: scale(1.1);
+    }
+
+    /* ====== CSS3 ANIMATION ====== */
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    section {
+      animation: fadeUp 1s ease;
+    }
+
+    /* ====== PHẦN CHÂN TRANG ====== */
+    footer {
+      background-color: #0ea5e9;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== BANNER HIỂN THỊ TÊN WEBSITE ====== -->
+  <header>
+    🌸 CỬA HÀNG TRUYỆN TRANH ANIMEZONE 🌸
+  </header>
+
+  <!-- ====== THANH ĐIỀU HƯỚNG (NAVBAR) ====== -->
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#project">Dự án</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+
+  <!-- ====== GIỚI THIỆU CÁ NHÂN ====== -->
+  <section id="about" class="about">
+    <h2>👤 Thông tin cá nhân</h2>
+    <p><b>Họ và tên:</b> Phan Nguyễn Thành Long</p>
+    <p><b>Ngành học:</b> Công Nghệ Thông Tin</p>
+    <p><b>Mục tiêu:</b> Trở thành lập trình viên Front-End chuyên về thiết kế website Anime & Truyện Tranh.</p>
+  </section>
+
+  <!-- ====== DỰ ÁN CHÍNH ====== -->
+  <section id="project" class="about">
+    <h2>💼 Dự án tiêu biểu</h2>
+    <p><b>Tên dự án:</b> Website Cửa Hàng Truyện Tranh AnimeZone</p>
+    <p><b>Mô tả:</b> Trang web bán truyện tranh trực tuyến, giao diện sinh động, có tìm kiếm và đánh giá truyện.</p>
+    <p><b>Công nghệ:</b> HTML5, CSS3, JavaScript, Bootstrap</p>
+  </section>
+
+  <!-- ====== LIÊN HỆ ====== -->
+  <section id="contact" class="contact">
+    <h2>📞 Liên hệ</h2>
+    <a href="https://github.com/thanhlongdev">GitHub</a>
+    <a href="https://facebook.com/thanhlong.dev">Facebook</a>
+    <a href="https://instagram.com/thanhlong.dev">Instagram</a>
+    <p>📧 Email: longpnthanh@gmail.com</p>
+  </section>
+
+  <!-- ====== CHÂN TRANG ====== -->
+  <footer>
+    © 2025 AnimeZone | Thiết kế bởi Thành Long
+  </footer>
+
+</body>
+</html>
+

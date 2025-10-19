@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dự Án - Cửa Hàng Truyện Tranh AnimeZone</title>
+  <a href="banner.html">⬅ Quay lại Trang Chủ</a>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f2fe, #fce1ec);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #ff4d6d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    .projects {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      color: #0ea5e9;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card-content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .tech {
+      background-color: #f1f5f9;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .view-btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #ff4d6d;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .view-btn:hover {
+      background-color: #e11d48;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      animation: fadeUp 0.8s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>💼 DỰ ÁN CỦA CỬA HÀNG TRUYỆN TRANH 💼</header>
+
+  <section class="projects">
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\hinh-nen-anime-ngau-4.jpeg" alt="AnimeZone Project">
+      <div class="card-content">
+        <h3>Website Cửa Hàng Truyện Tranh Comic Store</h3>
+        <p>Trang web bán truyện tranh online với giao diện trực quan, dễ dùng, hỗ trợ tìm kiếm và giỏ hàng. Người dùng có thể xem trước nội dung truyện, đánh giá và chia sẻ.</p>
+        <div class="tech">🔧 HTML • CSS • JavaScript • Bootstrap</div>
+        <a href="#" class="view-btn">Xem chi tiết</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\anh-truyen-tranh.jpg" alt="Comic Collection Project">
+      <div class="card-content">
+        <h3>Ứng dụng Quản lý Bộ Sưu Tập Truyện</h3>
+        <p>Ứng dụng mini giúp người quản lý truyện lưu trữ thông tin, thể loại, số tập và tình trạng đọc.</p>
+        <div class="tech">🧠 HTML • CSS Grid • LocalStorage</div>
+        <a href="#" class="view-btn">Xem chi tiết</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="D:\phannguyenthanhlong\tong-hop-hinh-nen-anime-xtmobile.webp" alt="ReaderZone Project">
+      <div class="card-content">
+        <h3>Blog Chia sẻ Cảm nhận Truyện</h3>
+        <p>Blog cho phép người dùng đăng bài, bình luận và chia sẻ đánh giá về các bộ truyện yêu thích.</p>
+        <div class="tech">📝 HTML • CSS Animation • JS</div>
+        <a href="#" class="view-btn">Xem chi tiết</a>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Comic store | Thiết kế bởi Thành Long
+  </footer>
+
+</body>
+</html>
+
